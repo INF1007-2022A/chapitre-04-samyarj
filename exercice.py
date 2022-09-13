@@ -20,7 +20,7 @@ def remove_third_char(string: str) -> str:
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    new_str = ''
+    new_str = str()
     for car in string:
         if car != old_char:
             new_str += car
