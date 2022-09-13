@@ -16,7 +16,7 @@ def remove_third_char(string: str) -> str:
     for car in string:
         if car != string[2]:
             new_str+= car
-    return new_str 
+    return new_str # probleme est que ca va enlever tous les cars de 3 ex. bonbon
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
