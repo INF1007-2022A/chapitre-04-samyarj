@@ -7,7 +7,6 @@ def is_even_len(string: str) -> bool:
         return True
     else:
         return False
-    #pass
 
 
 def remove_third_char(string: str) -> str:
@@ -18,7 +17,7 @@ def remove_third_char(string: str) -> str:
             new_str+= car
     return new_str # probleme est que ca va enlever tous les cars de 3 ex. bonbon
 
-# faire attention aux caracters qui se repete.
+# faire attention aux caracters qui se repetent.
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
     new_str = str()
@@ -31,7 +30,11 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+    result = int() # par défaut, le résultat est 0.
+    for i in string: # pour chaque charatère dans la chaîne, on cherche le nombre de char recherché
+        if i == char:
+            result +=1
+    return result
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
