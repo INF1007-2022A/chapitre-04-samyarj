@@ -38,8 +38,12 @@ def get_number_of_char(string: str, char: str) -> int:
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
-
+    result = int() # return value; 0 by default
+    sentence = sentence.split() # transforms sentence into list
+    for i in sentence:
+        if i == word:
+            result += 1 # counts the number of times 'word' is an element of sentence list
+    return result
 
 def main() -> None:
     chaine = "Bonjour!"
