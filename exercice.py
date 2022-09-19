@@ -31,7 +31,7 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 def get_number_of_char(string: str, char: str) -> int:
     result = int() # par défaut, le résultat est 0.
-    for i in string: # pour chaque charatère dans la chaîne, on cherche le nombre de char recherché
+    for i in string: # pour chaque caratère dans la chaîne, on cherche le nombre de char recherché
         if i == char:
             result +=1
     return result
