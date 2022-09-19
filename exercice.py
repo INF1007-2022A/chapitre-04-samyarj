@@ -38,7 +38,7 @@ def get_number_of_char(string: str, char: str) -> int:
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    result = int() # return value; 0 by default
+    result = int() # return value; 0 by default; it is the counter variable
     sentence = sentence.split() # transforms sentence into list
     for i in sentence:
         if i == word:
